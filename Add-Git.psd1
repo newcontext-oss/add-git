@@ -69,7 +69,7 @@ Description = 'Installs Git-for-Windows (https://gitforwindows.org/) on a Window
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-#FunctionsToExport = @('Add-Git')
+FunctionsToExport = @('Add-Git')
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @('Add-Git')
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = @('Git for Windows','Git')
+        Tags = @('GitforWindows','Git')
 
         # A URL to the license for this module.
         LicenseUri = 'https://www.gnu.org/licenses/gpl-3.0.html'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        # ProjectUri = 'https://github.com/newcontext-oss/add-git'
 
         # A URL to an icon representing this module.
         IconUri = 'https://o8pfi41on6y1sm1ztsxsaoar-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/New-Context-logo2.png'
