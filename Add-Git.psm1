@@ -1,4 +1,7 @@
 
+# Setup TLS
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 # Thanks to John Freeman: https://stackoverflow.com/a/54935264/238074
 function New-TemporaryDirectory {
     $parent = [System.IO.Path]::GetTempPath()
@@ -70,7 +73,7 @@ function Add-Git {
     # example: $latestInfo="https://github.com/git-for-windows/git/releases/tag/v2.23.0.windows.1"
     # pick off the version and build the download URL
     $fullVersion = Split-Path -Path $latestInfo -Leaf
-    $version = $fullVersion -replace '^v','' -replace '\.windows\..*',''
+    $version = $fullVersion -replace '^v','' -replace '\.windows',''
     $fileName = "Git-${version}-64-bit.exe"
     $latestUrl = ($latestInfo -Replace '/releases/tag/','/releases/download/') + "/" + $fileName
     # download the latest version
@@ -114,7 +117,7 @@ function Add-Git {
         if (-not $endLoop) {
             Write-Host "Sleeping 60 seconds"
             Start-Sleep -Seconds 60  # wait for completion
-            $endLoop = Test-Path '$InstallPath\Git\unins00*.msg'
+            $endLoop = Test-Path "$InstallPath\Git\unins00*.msg"
         }
         if (-not $endLoop) { Write-Host "failed..Retrying installer" }
     }
