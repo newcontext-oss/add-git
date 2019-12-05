@@ -24,9 +24,9 @@ function Add-Git {
         Windows machine. Installs latest 64-bit version. Install location
         is C:\Program Files\Git (default). 
 
-        This software is copywrite New Context Security and open sourced
-        under the GNU General Public License, version 3. See more details
-        at https://www.gnu.org/licenses/quick-guide-gplv3.html . Author:
+        This software is copyright New Context Security and open sourced
+        under the MIT License, 2019 version. See more details
+        at https://opensource.org/licenses/MIT . Author:
         Kevin Buchs.
 
         .Parameter InstallPath

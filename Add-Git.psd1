@@ -12,7 +12,7 @@
 RootModule = 'Add-Git.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.5'
+ModuleVersion = '1.0.6'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -27,7 +27,7 @@ Author = 'Kevin Buchs'
 CompanyName = 'New Context Security'
 
 # Copyright statement for this module
-Copyright = '(c) New Context Security. All rights reserved. Released as open source under GNU General Public License, Version 3'
+Copyright = '(c) New Context Security. All rights reserved. Released as open source under MIT License, 2019 Version'
 
 # Description of the functionality provided by this module
 Description = 'Installs Git-for-Windows (https://gitforwindows.org/) on a Windows machine. Installs latest 64-bit version. Install location is C:\Program Files\Git (default).'
@@ -98,10 +98,10 @@ PrivateData = @{
         Tags = @('GitforWindows','Git')
 
         # A URL to the license for this module.
-        LicenseUri = 'https://www.gnu.org/licenses/gpl-3.0.html'
+        LicenseUri = 'https://opensource.org/licenses/MIT'
 
         # A URL to the main website for this project.
-        # ProjectUri = 'https://github.com/newcontext-oss/add-git'
+        ProjectUri = 'https://github.com/newcontext-oss/add-git'
 
         # A URL to an icon representing this module.
         IconUri = 'https://o8pfi41on6y1sm1ztsxsaoar-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/New-Context-logo2.png'
